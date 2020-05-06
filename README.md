@@ -1,3 +1,7 @@
+<img src="docs-images/image1.png">
+
+<img src="docs-images/image2.png">
+
 **Example**
 
 https://codepen.io/mickyholbrook/pen/yLYvNEr
