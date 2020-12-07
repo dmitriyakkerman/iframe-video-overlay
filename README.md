@@ -32,7 +32,7 @@ Create parent element with child parent element. Put iframe and image inside:
           
       <div class="video">
         <div>
-          <iframe width="560" height="315" src="https://www.youtube.com/embed/lM02vNMRRB0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+          <iframe src="https://www.youtube.com/embed/lM02vNMRRB0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
           <img src="https://www.theuiaa.org/wp-content/uploads/2017/11/RTM19-banner-web.jpg" alt="">
         </div>
       </div>
