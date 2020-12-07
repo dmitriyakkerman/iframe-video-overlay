@@ -16,7 +16,7 @@ https://codepen.io/mickyholbrook/pen/yLYvNEr
     
 Put the script at the bottom of your markup: 
 
-    <script src="./dist/js/simple-youtube-overlay.js"></script>    
+    <script src="./dist/js/simple-iframe-overlay.js"></script>    
    
 Or use import/require in your Javascript file:
     
