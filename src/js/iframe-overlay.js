@@ -10,7 +10,16 @@
 
 class IFrameOverlay {
   constructor(options = {}) {
-    this.el = options.el;
+
+    if(!options.el) {
+      throw new Error('No IFrameOverlay selector')
+    }
+
+    if(!options.play) {
+      throw new Error('No IFrameOverlay play button options')
+    }
+
+    this.el = typeof options.el === 'string' ? document.querySelector(options.el) : options.el;
     this.buttonOptions = options.play;
     this.init();
   }
