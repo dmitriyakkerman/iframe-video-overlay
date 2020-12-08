@@ -28,7 +28,7 @@ Or use import/require in your Javascript file:
  
 **Usage**
      
-Create parent element with child parent element. Put iframe and image inside: 
+Create parent element with child parent element. Put iframe and overlay image inside: 
           
       <div class="video">
           <div>
@@ -38,6 +38,8 @@ Create parent element with child parent element. Put iframe and image inside:
       </div>
          
 **Initialization**
+
+Specify root selector (string or DOM node) and play button options:
  
       document.addEventListener('DOMContentLoaded', function() {
           new IFrameOverlay({
