@@ -5,12 +5,12 @@ let gulp = require('gulp'),
     autoPrefixer = require('gulp-autoprefixer');
 
 gulp.task('compile-scss', function () {
-  return gulp.src('src/scss/simple-iframe-overlay.scss')
+  return gulp.src('src/scss/iframe-overlay.scss')
     .pipe(sass().on('error', function (error) {
         console.log('ERROR: ' + error);
     }))
     .pipe(autoPrefixer())
-    .pipe(rename('simple-iframe-overlay.min.css'))
+    .pipe(rename('iframe-overlay.min.css'))
     .pipe(cleanCss())
     .pipe(gulp.dest('dist/css'));
 });

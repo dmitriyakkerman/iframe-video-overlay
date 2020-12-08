@@ -11,7 +11,7 @@
 class IFrameOverlay {
   constructor(options = {}) {
     this.el = options.el;
-
+    this.buttonOptions = options.play;
     this.init();
   }
 
@@ -25,6 +25,9 @@ class IFrameOverlay {
     let playButton = document.createElement('a');
     playButton.href = '#';
     playButton.classList.add('overlay__play');
+    playButton.style.width = this.buttonOptions.width;
+    playButton.style.height = this.buttonOptions.height;
+    playButton.style.backgroundImage = `url(${ this.buttonOptions.backgroundImage})`;
     this.el.firstElementChild.append(playButton);
   }
 
@@ -33,6 +36,7 @@ class IFrameOverlay {
     this.el.firstElementChild.classList.add('overlay__container');
     this.el.firstElementChild.querySelector('img').classList.add('overlay__image');
   }
+
 
   openIFrame() {
     let playButton = this.el.querySelector('.overlay__play');

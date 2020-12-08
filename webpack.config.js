@@ -4,7 +4,7 @@ let webpack = require('webpack');
 module.exports = {
     watch: true,
     entry: {
-        'simple-iframe-overlay': './src/js/simple-iframe-overlay.js'
+        'iframe-overlay': './src/js/iframe-overlay.js'
     },
     output: {
         path: path.resolve(__dirname, 'dist/js'),
