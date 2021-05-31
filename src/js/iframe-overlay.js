@@ -12,17 +12,17 @@ class IFrameOverlay {
   constructor(options = {}) {
 
     if(!options.el) {
-      throw new Error('No IFrameOverlay selector')
+      throw new Error('Specify "el" option')
     }
 
-    if(!options.playButton) {
-      throw new Error('No IFrameOverlay play button options')
+    if(!options.playButton.iconSrc) {
+      throw new Error('Specify "playButton" option')
     }
 
     this.mergeOptionsAndDefaults();
 
     this.el = typeof options.el === 'string' ? document.querySelectorAll(options.el) : options.el;
-    this.type = options.type ? this.types[options.type.toLowerCase()] : this.types.youtube;
+    this.type = options.type ? this.defaults.types[options.type.toLowerCase()] : this.defaults.types.youtube;
     this.imageSrc = options.imageSrc;
     this.playButton = options.playButton;
     this.speed = 700;
@@ -31,12 +31,18 @@ class IFrameOverlay {
   }
 
   mergeOptionsAndDefaults() {
-    let types = {
-      youtube: 'https://www.youtube.com/embed/',
-      vimeo: 'https://player.vimeo.com/video/'
+    let defaults = {
+      types: {
+        youtube: 'https://www.youtube.com/embed/',
+        vimeo: 'https://player.vimeo.com/video/'
+      },
+      dimensions: {
+        width: '10%',
+        height: '10%'
+      }
     };
 
-    this.types = {...types};
+    this.defaults = {...defaults};
   }
 
   init() {
@@ -63,8 +69,8 @@ class IFrameOverlay {
 
     let playButton = document.createElement('button');
     playButton.classList.add('iframe-overlay__play');
-    playButton.style.width = this.playButton.width;
-    playButton.style.height = this.playButton.height;
+    playButton.style.width = this.playButton.width || this.defaults.dimensions.width;
+    playButton.style.height = this.playButton.height || this.defaults.dimensions.height;
     playButton.style.backgroundImage = `url(${ this.playButton.iconSrc})`;
 
     if(this.imageSrc) {
