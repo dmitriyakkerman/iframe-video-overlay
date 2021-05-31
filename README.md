@@ -44,13 +44,17 @@ _Vimeo video ID_
          
 **Initialization**
 
-1.Specify root selector (string or DOM node) in "el" option.
+1.Specify root element (string or DOM node) in "el" option.
 
-2.Specify video hosting name("youtube" or "vimeo") in "type" option. You can pass this option in case using youtube video(option "type" has "youtube" value by default).
+2.Specify video hosting name("youtube" or "vimeo") in "type" option. 
 
-3.Specify "imageSrc" if you want to overlay iframe with image when module is initialized.
+*_You can pass this option in case using youtube video(option "type" has "youtube" value by default)._
 
-4.Specify "iconSrc" and "width" and "height" options inside "playButton" option for play button customization. You can pass "width" and "height" options (by default they are equal "10%")
+3.Specify "imageSrc" if you want to overlay iframe with image.
+
+4.Specify "iconSrc", "width" and "height" options inside "playButton" option for play button customization. 
+
+*_You can pass "width" and "height" options (by default they are equal "10%" of their root element)_
  
       document.addEventListener('DOMContentLoaded', function() {
           new IFrameOverlay({
