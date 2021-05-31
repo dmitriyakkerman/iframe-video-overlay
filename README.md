@@ -33,9 +33,11 @@ Or use import/require in your Javascript file:
 Create root element, specify video ID inside "data-id" attribute. 
 
 _Youtube video ID_
+
 <img src="docs-images/image3.png">
 
 _Vimeo video ID_
+
 <img src="docs-images/image4.png">
           
     <div class="video" data-id="lM02vNMRRB0"></div>
