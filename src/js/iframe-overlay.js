@@ -15,49 +15,81 @@ class IFrameOverlay {
       throw new Error('No IFrameOverlay selector')
     }
 
-    if(!options.play) {
+    if(!options.playButton) {
       throw new Error('No IFrameOverlay play button options')
     }
 
-    this.el = typeof options.el === 'string' ? document.querySelector(options.el) : options.el;
-    this.buttonOptions = options.play;
+    this.mergeOptionsAndDefaults();
+
+    this.el = typeof options.el === 'string' ? document.querySelectorAll(options.el) : options.el;
+    this.type = options.type ? this.types[options.type.toLowerCase()] : this.types.youtube;
+    this.imageSrc = options.imageSrc;
+    this.playButton = options.playButton;
+    this.speed = 700;
+
     this.init();
   }
 
+  mergeOptionsAndDefaults() {
+    let types = {
+      youtube: 'https://www.youtube.com/embed/',
+      vimeo: 'https://player.vimeo.com/video/'
+    };
+
+    this.types = {...types};
+  }
+
   init() {
-    this.initPlayButton();
-    this.initClasses();
-    this.openIFrame();
+    let that = this;
+
+    this.el.forEach(function (item) {
+      that.initHTML(item);
+      that.openIFrame(item);
+    });
   }
 
-  initPlayButton() {
-    let playButton = document.createElement('a');
-    playButton.href = '#';
-    playButton.classList.add('overlay__play');
-    playButton.style.width = this.buttonOptions.width;
-    playButton.style.height = this.buttonOptions.height;
-    playButton.style.backgroundImage = `url(${ this.buttonOptions.backgroundImage})`;
-    this.el.firstElementChild.append(playButton);
+  initHTML(item) {
+    item.classList.add('iframe-overlay');
+
+    let videoContainer = document.createElement('div');
+    videoContainer.classList.add('iframe-overlay__container');
+
+    let iframe = document.createElement('iframe');
+    let videoID = item.dataset.id;
+    iframe.src = this.type + videoID;
+    iframe.setAttribute("frameborder", "0");
+    iframe.setAttribute("allowfullscreen", "1");
+    iframe.setAttribute("allow", "autoplay; encrypted-media");
+
+    let playButton = document.createElement('button');
+    playButton.classList.add('iframe-overlay__play');
+    playButton.style.width = this.playButton.width;
+    playButton.style.height = this.playButton.height;
+    playButton.style.backgroundImage = `url(${ this.playButton.iconSrc})`;
+
+    if(this.imageSrc) {
+      let backgroundImage = document.createElement('img');
+      backgroundImage.classList.add('iframe-overlay__image');
+      backgroundImage.src = this.imageSrc;
+      videoContainer.appendChild(backgroundImage);
+    }
+
+    videoContainer.appendChild(iframe);
+    videoContainer.appendChild(playButton);
+    item.appendChild(videoContainer);
   }
 
-  initClasses() {
-    this.el.classList.add('overlay');
-    this.el.firstElementChild.classList.add('overlay__container');
-    this.el.firstElementChild.querySelector('img').classList.add('overlay__image');
-  }
+  openIFrame(item) {
+    let that = this;
 
-
-  openIFrame() {
-    let playButton = this.el.querySelector('.overlay__play');
+    let playButton = item.querySelector('.iframe-overlay__play');
     playButton.addEventListener('click', function(e) {
-      e.preventDefault();
-
       this.parentElement.classList.add('opened');
 
       setTimeout(() => {
         this.parentElement.classList.add('hidden');
-      }, 1000)
-    })
+      }, that.speed);
+    });
   }
 }
 

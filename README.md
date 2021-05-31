@@ -1,3 +1,5 @@
+Simple embed responsive video(YouTube, Vimeo) overlay module. 
+
 <img src="docs-images/image1.png">
 
 <img src="docs-images/image2.png">
@@ -12,7 +14,7 @@ https://codepen.io/mickyholbrook/pen/yLYvNEr
   
     <link rel="stylesheet" href="./dist/css/iframe-overlay.min.css">
     
-**Javascript**    
+**Javascript**   
     
 Put the script at the bottom of your markup: 
 
@@ -28,24 +30,29 @@ Or use import/require in your Javascript file:
  
 **Usage**
      
-Create parent element with child parent element. Put iframe and overlay image inside: 
+1.Create root element. 
+
+2.Specify video ID inside "data-id" attribute. 
           
-      <div class="video">
-          <div>
-              <iframe src="https://www.youtube.com/embed/lM02vNMRRB0" frameborder="0" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-              <img src="https://www.theuiaa.org/wp-content/uploads/2017/11/RTM19-banner-web.jpg" alt="">
-          </div>
-      </div>
+    <div class="video" data-id="lM02vNMRRB0"></div>
          
 **Initialization**
 
-Specify root selector (string or DOM node) and play button options:
+1.Specify root selector (string or DOM node) in "el" option.
+
+2.Specify video hosting name("youtube" or "vimeo") in "type" option. You can pass this param in case using youtube video(param "type" has "youtube" value by default).
+
+3.Specify "imageSrc" if you want to overlay iframe with image when module is initialized.
+
+4.Specify "iconSrc", "width" and "height" options inside "playButton" option for play button customization. 
  
       document.addEventListener('DOMContentLoaded', function() {
           new IFrameOverlay({
               el: '.video',
-              play: {
-                  backgroundImage: 'play-button.jpg',
+              type: 'youtube', //or 'vimeo'
+              imageSrc: 'video-image.jpg',
+              playButton: {
+                  iconSrc: 'play-button.png',
                   width: '10%',
                   height: '10%'
               }
