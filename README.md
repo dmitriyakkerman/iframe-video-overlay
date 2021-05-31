@@ -77,39 +77,39 @@ _Vimeo video ID_
 
 **Options**
 
-###`el`
+### `el`
 
 *Type:* String, Element  
 *Required:* true
 
-###`type`
+### `type`
 
 *Type:* String  
 *Default:* `youtube`  
 *Required:* false
 
-###`imageSrc`
+### `imageSrc`
 
 *Type:* String   
 *Required:* false 
 
-###`playButton`
+### `playButton`
 
 *Type:* Object   
 *Required:* true
 
-####`iconSrc`
+#### `iconSrc`
 
 *Type:* String   
 *Required:* true
 
-####`width`
+#### `width`
 
 *Type:* String   
 *Default:* `10%`  
 *Required:* false
 
-####`height`
+#### `height`
 
 *Type:* String   
 *Default:* `10%`  
