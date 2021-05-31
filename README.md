@@ -30,9 +30,9 @@ Or use import/require in your Javascript file:
  
 **Usage**
      
-1.Create root element. 
+Create root element, specify video ID inside "data-id" attribute. 
 
-2.Specify video ID inside "data-id" attribute. 
+<img src="docs-images/image3.png">
           
     <div class="video" data-id="lM02vNMRRB0"></div>
          
