@@ -39,27 +39,7 @@ Load the required stylesheet to your entry CSS file:
   Put the script at the bottom of your markup: 
 
     <script src="./dist/js/iframe-video-overlay.min.js"></script>    
-
-**Styles:**
-  
-  Put the required stylesheet link in HEAD tag:
-  
-    <link rel="stylesheet" href="./dist/css/iframe-video-overlay.min.css">
-    
-**Javascript**   
-    
-Put the script at the bottom of your markup: 
-
-    <script src="./dist/js/iframe-video-overlay.min.js"></script>    
    
-Or use import/require in your Javascript file:
-    
-    const IFrameVideoOverlay = require('./dist/js/iframe-video-overlay.min.js');
-    
-    or
-    
-    import IFrameVideoOverlay from './dist/js/iframe-video-overlay.min.js';
-    
 ------    
  
 **Usage**
