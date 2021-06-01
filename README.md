@@ -122,14 +122,14 @@ Play button icon.
 ###### `playButton.width`
 Width of play button.
 
-*Type:* String(px, %)   
+*Type:* String(px, %, etc...)   
 *Default:* `playButton.percentage or 10% of root element`  
 *Required:* false
 
 ###### `playButton.height`
 Height of play button.
 
-*Type:* String   
+*Type:* String(px, %, etc...)    
 *Default:* `playButton.percentage or 10% of root element`  
 *Required:* false
 
@@ -137,5 +137,5 @@ Height of play button.
 Width and height of play button in percentage. 
 
 *Type:* Number   
-*Default:* `10%`  
+*Default:* `10% of root element`  
 *Required:* false
