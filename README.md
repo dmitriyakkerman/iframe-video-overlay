@@ -10,6 +10,36 @@ https://codepen.io/mickyholbrook/pen/yLYvNEr
 
 ------
 
+**Installation**
+
+**npm**
+
+    npm i iframe-video-overlay
+    
+Load the required JS to your entry JS file:
+    
+    let IFrameOverlay = require('iframe-video-overlay');   
+    or    
+    import IFrameOverlay from 'iframe-video-overlay';
+    
+Load the required stylesheet to your entry CSS file:
+
+    @import "node_modules/iframe-video-overlay/index";
+    
+**Cloning git repository**
+
+    1. Go to your project directory
+    2. git clone https://github.com/dmitriyakkerman/iframe-overlay.git .
+  
+  Put the required stylesheet link in HEAD tag:
+  
+    <link rel="stylesheet" href="./dist/css/mobile-nav.min.css">
+     
+    
+  Put the script at the bottom of your markup: 
+
+    <script src="./dist/js/mobile-nav.min.js"></script>    
+
 **Styles:**
   
   Put the required stylesheet link in HEAD tag:

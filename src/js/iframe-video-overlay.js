@@ -8,7 +8,7 @@
   }
 }(typeof self !== 'undefined' ? self : this, function () {
 
-class IFrameOverlay {
+class IFrameVideoOverlay {
   constructor(options = {}) {
 
     if(!options.el) {
@@ -51,10 +51,10 @@ class IFrameOverlay {
   }
 
   initHTML(item) {
-    item.classList.add('iframe-overlay');
+    item.classList.add('iframe-video-overlay');
 
     let videoContainer = document.createElement('div');
-    videoContainer.classList.add('iframe-overlay__container');
+    videoContainer.classList.add('iframe-video-overlay__container');
 
     let iframe = document.createElement('iframe');
     let videoID = item.dataset.id;
@@ -64,7 +64,7 @@ class IFrameOverlay {
     iframe.setAttribute("allow", "autoplay; encrypted-media");
 
     let playButton = document.createElement('button');
-    playButton.classList.add('iframe-overlay__play');
+    playButton.classList.add('iframe-video-overlay__play');
     let rootComputedWidth = window.getComputedStyle(item, null).getPropertyValue("width");
     playButton.style.width = this.playButton.width || (rootComputedWidth.substring(0, rootComputedWidth.length - 2) * ((this.playButton.percentage || 10) / 100)) + 'px';
     playButton.style.height = this.playButton.height || (rootComputedWidth.substring(0, rootComputedWidth.length - 2) * ((this.playButton.percentage || 10) / 100)) + 'px';
@@ -72,7 +72,7 @@ class IFrameOverlay {
 
     if(this.imageSrc) {
       let backgroundImage = document.createElement('img');
-      backgroundImage.classList.add('iframe-overlay__image');
+      backgroundImage.classList.add('iframe-video-overlay__image');
       backgroundImage.src = this.imageSrc;
       videoContainer.appendChild(backgroundImage);
     }
@@ -85,7 +85,7 @@ class IFrameOverlay {
   openIFrame(item) {
     let that = this;
 
-    let playButton = item.querySelector('.iframe-overlay__play');
+    let playButton = item.querySelector('.iframe-video-overlay__play');
     playButton.addEventListener('click', function(e) {
       this.parentElement.classList.add('opened');
 
@@ -96,8 +96,8 @@ class IFrameOverlay {
   }
 }
 
-window.IFrameOverlay = IFrameOverlay;
+window.IFrameVideoOverlay = IFrameVideoOverlay;
 
-return IFrameOverlay;
+return IFrameVideoOverlay;
 
 }));

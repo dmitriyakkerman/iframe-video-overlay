@@ -1,4 +1,4 @@
-.iframe-overlay {
+.iframe-video-overlay {
   display: block;
 
   &__container {
@@ -10,22 +10,22 @@
 
     &.opened {
 
-      .iframe-overlay__image {
+      .iframe-video-overlay__image {
         opacity: 0 !important;
       }
 
-      .iframe-overlay__play {
+      .iframe-video-overlay__play {
         opacity: 0 !important;
       }
     }
 
     &.hidden {
 
-      .iframe-overlay__image {
+      .iframe-video-overlay__image {
         display: none !important;
       }
 
-      .iframe-overlay__play {
+      .iframe-video-overlay__play {
         display: none !important;
       }
     }
