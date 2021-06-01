@@ -1,4 +1,5 @@
 .iframe-overlay {
+  display: block;
 
   &__container {
     position: relative;
@@ -60,6 +61,7 @@
     top: 50%;
     left: 50%;
     transform: translate(-50%, -50%);
+    display: block;
     background: none;
     background-repeat: no-repeat;
     background-size: contain;

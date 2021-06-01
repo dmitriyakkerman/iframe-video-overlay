@@ -35,10 +35,6 @@ class IFrameOverlay {
       types: {
         youtube: 'https://www.youtube.com/embed/',
         vimeo: 'https://player.vimeo.com/video/'
-      },
-      dimensions: {
-        width: '10%',
-        height: '10%'
       }
     };
 
@@ -69,8 +65,9 @@ class IFrameOverlay {
 
     let playButton = document.createElement('button');
     playButton.classList.add('iframe-overlay__play');
-    playButton.style.width = this.playButton.width || this.defaults.dimensions.width;
-    playButton.style.height = this.playButton.height || this.defaults.dimensions.height;
+    let rootComputedWidth = window.getComputedStyle(item, null).getPropertyValue("width");
+    playButton.style.width = this.playButton.width || (rootComputedWidth.substring(0, rootComputedWidth.length - 2) * ((this.playButton.percentage || 10) / 100)) + 'px';
+    playButton.style.height = this.playButton.height || (rootComputedWidth.substring(0, rootComputedWidth.length - 2) * ((this.playButton.percentage || 10) / 100)) + 'px';
     playButton.style.backgroundImage = `url(${ this.playButton.iconSrc})`;
 
     if(this.imageSrc) {

@@ -77,40 +77,54 @@ _Vimeo video ID_
 
 **Options**
 
-### `el`
+##### `el`
+Root element for module initialization.
 
 *Type:* String, Element  
 *Required:* true
 
-### `type`
+##### `type`
+Points of what type of the video hosting you are going to use.
 
 *Type:* String  
 *Default:* `youtube`  
 *Required:* false
 
-### `imageSrc`
+##### `imageSrc`
+Background image, which covers your iframe video.
 
 *Type:* String   
 *Required:* false 
 
-### `playButton`
+##### `playButton`
+Play button customization property, which includes "iconSrc", "width", "height" and "percentage" options.
 
 *Type:* Object   
 *Required:* true
 
-#### `playButton.iconSrc`
+###### `playButton.iconSrc`
+Play button icon.
 
 *Type:* String   
 *Required:* true
 
-#### `playButton.width`
+###### `playButton.width`
+Width of play button.
 
-*Type:* String   
-*Default:* `10%`  
+*Type:* String(px, %)   
+*Default:* `playButton.percentage or 10% of root element`  
 *Required:* false
 
-#### `playButton.height`
+###### `playButton.height`
+Height of play button.
 
 *Type:* String   
+*Default:* `playButton.percentage or 10% of root element`  
+*Required:* false
+
+###### `playButton.percentage`
+Width and height of play button in percentage. 
+
+*Type:* Number   
 *Default:* `10%`  
 *Required:* false
