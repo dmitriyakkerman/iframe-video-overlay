@@ -18,9 +18,9 @@ https://codepen.io/mickyholbrook/pen/yLYvNEr
     
 Load the required JS to your entry JS file:
     
-    let IFrameOverlay = require('iframe-video-overlay');   
+    let IFrameVideoOverlay = require('iframe-video-overlay');   
     or    
-    import IFrameOverlay from 'iframe-video-overlay';
+    import IFrameVideoOverlay from 'iframe-video-overlay';
     
 Load the required stylesheet to your entry CSS file:
 
