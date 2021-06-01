@@ -14,11 +14,7 @@ https://codepen.io/mickyholbrook/pen/yLYvNEr
 
 **npm**
 
-```js
-
     npm i iframe-video-overlay
-
-```
     
 Load the required JS to your entry JS file:
     
@@ -76,6 +72,8 @@ _Vimeo video ID_
 4.Specify "iconSrc", "width", "height" and "percentage" options inside "playButton" option for play button customization.  
 *_You can pass "width" and "height" options in case using "percentage" option(or even pass "percentage" option, by default "width" and "height" equal "10%" of root element)_
  
+```js 
+ 
       document.addEventListener('DOMContentLoaded', function() {
           new IFrameVideoOverlay({
               el: '.video',
@@ -90,6 +88,7 @@ _Vimeo video ID_
               }
           })
       });
+```
 
 ------
 
