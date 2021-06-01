@@ -1,8 +1,8 @@
 Simple embed responsive video(YouTube, Vimeo) overlay module. 
 
-<img src="docs-images/image1.png">
+<img src="https://raw.githubusercontent.com/dmitriyakkerman/iframe-video-overlay/master/docs-images/image1.png">
 
-<img src="docs-images/image2.png">
+<img src="https://raw.githubusercontent.com/dmitriyakkerman/iframe-video-overlay/master/docs-images/image2.png">
 
 **Example**
 
@@ -48,11 +48,13 @@ Create root element, specify video ID inside "data-id" attribute.
 
 _Youtube video ID_
 
-<img src="docs-images/image3.png">
+<img src="https://raw.githubusercontent.com/dmitriyakkerman/iframe-video-overlay/master/docs-images/image3.png">
+
 
 _Vimeo video ID_
 
-<img src="docs-images/image4.png">
+
+<img src="https://raw.githubusercontent.com/dmitriyakkerman/iframe-video-overlay/master/docs-images/image4.png">
           
     <div class="video" data-id="lM02vNMRRB0"></div>
  
@@ -79,7 +81,8 @@ _Vimeo video ID_
                   iconSrc: 'play-button.png',
                   width: '15%',
                   height: '15%',
-                  percentage: 15
+                  //or
+                  percentage: 20
               }
           })
       });
@@ -105,7 +108,7 @@ Points of what type of the video hosting you are going to use.
 Background image, which covers your iframe video.
 
 *Type:* String   
-*Required:* false 
+*Required:* `false` 
 
 ##### `playButton`
 Play button customization property, which includes `playButton.iconSrc`, `playButton.width`, `playButton.height` and `playButton.percentage` options.
@@ -123,19 +126,19 @@ Play button icon.
 Width of play button.
 
 *Type:* String(px, %, etc...)   
-*Default:* `playButton.percentage or 10% of root element`  
+*Default:* `playButton.percentage` or 10% of root element  
 *Required:* false
 
 ###### `playButton.height`
 Height of play button.
 
-*Type:* String(px, %, etc...)    
-*Default:* `playButton.percentage or 10% of root element`  
+*Type:* String(px, %, etc...)     
+*Default:* `playButton.percentage` or 10% of root element  
 *Required:* false
 
 ###### `playButton.percentage`
 Width and height of play button in percentage. 
 
 *Type:* Number   
-*Default:* `10% of root element`  
+*Default:* 10% of root element  
 *Required:* false

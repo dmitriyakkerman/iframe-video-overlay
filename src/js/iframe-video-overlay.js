@@ -15,8 +15,12 @@ class IFrameVideoOverlay {
       throw new Error('Specify "el" option')
     }
 
-    if(!options.playButton.iconSrc) {
+    if(!options.playButton) {
       throw new Error('Specify "playButton" option')
+    }
+
+    if(!options.playButton.iconSrc) {
+      throw new Error('Specify "playButton.iconSrc" option')
     }
 
     this.mergeOptionsAndDefaults();
