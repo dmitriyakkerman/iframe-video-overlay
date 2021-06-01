@@ -54,11 +54,11 @@ Put the script at the bottom of your markup:
    
 Or use import/require in your Javascript file:
     
-    const IFrameOverlay = require('./dist/js/iframe-video-overlay.min.js');
+    const IFrameVideoOverlay = require('./dist/js/iframe-video-overlay.min.js');
     
     or
     
-    import IFrameOverlay from './dist/js/iframe-video-overlay.min.js';
+    import IFrameVideoOverlay from './dist/js/iframe-video-overlay.min.js';
     
 ------    
  
