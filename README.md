@@ -97,7 +97,7 @@ Background image, which covers your iframe video.
 *Required:* false 
 
 ##### `playButton`
-Play button customization property, which includes "iconSrc", "width", "height" and "percentage" options.
+Play button customization property, which includes `playButton.iconSrc`, `playButton.width`, `playButton.height` and `playButton.percentage` options.
 
 *Type:* Object   
 *Required:* true
