@@ -55,9 +55,10 @@ _Vimeo video ID_
 
 
 <img src="https://raw.githubusercontent.com/dmitriyakkerman/iframe-video-overlay/master/docs-images/image4.png">
-          
+
+```html          
     <div class="video" data-id="lM02vNMRRB0"></div>
- 
+``` 
 ------
          
 **Initialization**
