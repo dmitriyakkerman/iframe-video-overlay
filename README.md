@@ -67,8 +67,9 @@ _Vimeo video ID_
               imageSrc: 'video-image.jpg',
               playButton: {
                   iconSrc: 'play-button.png',
-                  width: '10%',
-                  height: '10%'
+                  width: '15%',
+                  height: '15%',
+                  percentage: 15
               }
           })
       });
