@@ -32,14 +32,14 @@ Load the required stylesheet to your entry CSS file:
     2. git clone https://github.com/dmitriyakkerman/iframe-video-overlay.git .
   
   Put the required stylesheet link in HEAD tag:
-  
-    <link rel="stylesheet" href="./dist/css/iframe-video-overlay.min.css">
-     
+```html  
+<link rel="stylesheet" href="./dist/css/iframe-video-overlay.min.css">
+ ```    
     
   Put the script at the bottom of your markup: 
-
-    <script src="./dist/js/iframe-video-overlay.min.js"></script>    
-   
+```html
+<script src="./dist/js/iframe-video-overlay.min.js"></script>    
+```   
 ------    
  
 **Usage**
@@ -57,7 +57,7 @@ _Vimeo video ID_
 <img src="https://raw.githubusercontent.com/dmitriyakkerman/iframe-video-overlay/master/docs-images/image4.png">
 
 ```html          
-    <div class="video" data-id="lM02vNMRRB0"></div>
+<div class="video" data-id="lM02vNMRRB0"></div>
 ``` 
 ------
          
