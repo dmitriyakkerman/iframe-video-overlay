@@ -14,7 +14,11 @@ https://codepen.io/mickyholbrook/pen/yLYvNEr
 
 **npm**
 
+```js
+
     npm i iframe-video-overlay
+
+```
     
 Load the required JS to your entry JS file:
     
