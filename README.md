@@ -69,7 +69,7 @@ _Vimeo video ID_
 
 3.Specify "imageSrc" if you want to overlay iframe with image.
 
-4.Specify "iconSrc", "width" and "height"(or "percentage") options inside "playButton" option for play button customization.  
+4.Specify "iconSrc", "width", "height" and "percentage" options inside "playButton" option for play button customization.  
 *_You can pass "width" and "height" options in case using "percentage" option(or even pass "percentage" option, by default "width" and "height" equal "10%" of root element)_
  
       document.addEventListener('DOMContentLoaded', function() {
