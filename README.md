@@ -1,8 +1,6 @@
 Simple embed responsive video(YouTube, Vimeo) overlay module. 
 
-<img src="https://raw.githubusercontent.com/dmitriyakkerman/iframe-video-overlay/master/docs-images/image1.png">
-
-<img src="https://raw.githubusercontent.com/dmitriyakkerman/iframe-video-overlay/master/docs-images/image2.png">
+<img src="https://raw.githubusercontent.com/dmitriyakkerman/iframe-video-overlay/master/docs-images/presentation.gif">
 
 **Example**
 
