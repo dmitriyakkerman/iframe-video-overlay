@@ -1,0 +1,40 @@
+{
+  "name": "iframe-video-overlay",
+  "version": "1.0.0",
+  "description": "Simple embed responsive video(YouTube, Vimeo) overlay module.",
+  "main": "index.js",
+  "scripts": {
+    "build": "webpack -p",
+    "start": "webpack --watch"
+  },
+  "devDependencies": {
+    "gulp": "^4.0.2",
+    "gulp-autoprefixer": "^6.0.0",
+    "gulp-clean-css": "^3.10.0",
+    "gulp-rename": "^1.4.0",
+    "gulp-sass": "^4.0.1",
+    "webpack": "^4.28.2",
+    "webpack-cli": "^3.1.2"
+  },
+  "dependencies": {
+    "node-sass": "^4.13.1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/dmitriyakkerman/iframe-video-overlay.git"
+  },
+  "keywords": [
+    "youtube",
+    "vimeo",
+    "iframe",
+    "embed-videos",
+    "video-overlay",
+    "iframe-overlay"
+  ],
+  "author": "Dmitriy Akkerman",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/dmitriyakkerman/iframe-video-overlay/issues"
+  },
+  "homepage": "https://github.com/dmitriyakkerman/iframe-video-overlay#readme"
+}
