@@ -29,36 +29,36 @@ Load the required stylesheet to your entry CSS file:
 **Cloning git repository**
 
     1. Go to your project directory
-    2. git clone https://github.com/dmitriyakkerman/iframe-overlay.git .
+    2. git clone https://github.com/dmitriyakkerman/iframe-video-overlay.git .
   
   Put the required stylesheet link in HEAD tag:
   
-    <link rel="stylesheet" href="./dist/css/mobile-nav.min.css">
+    <link rel="stylesheet" href="./dist/css/iframe-video-overlay.min.css">
      
     
   Put the script at the bottom of your markup: 
 
-    <script src="./dist/js/mobile-nav.min.js"></script>    
+    <script src="./dist/js/iframe-video-overlay.min.js"></script>    
 
 **Styles:**
   
   Put the required stylesheet link in HEAD tag:
   
-    <link rel="stylesheet" href="./dist/css/iframe-overlay.min.css">
+    <link rel="stylesheet" href="./dist/css/iframe-video-overlay.min.css">
     
 **Javascript**   
     
 Put the script at the bottom of your markup: 
 
-    <script src="./dist/js/iframe-overlay.min.js"></script>    
+    <script src="./dist/js/iframe-video-overlay.min.js"></script>    
    
 Or use import/require in your Javascript file:
     
-    const IFrameOverlay = require('./dist/js/iframe-overlay.min.js');
+    const IFrameOverlay = require('./dist/js/iframe-video-overlay.min.js');
     
     or
     
-    import IFrameOverlay from './dist/js/iframe-overlay.min.js';
+    import IFrameOverlay from './dist/js/iframe-video-overlay.min.js';
     
 ------    
  
@@ -91,7 +91,7 @@ _Vimeo video ID_
 *_You can pass "width" and "height" options (by default they are equal "10%" of their root element)_
  
       document.addEventListener('DOMContentLoaded', function() {
-          new IFrameOverlay({
+          new IFrameVideoOverlay({
               el: '.video',
               type: 'youtube', //or 'vimeo'
               imageSrc: 'video-image.jpg',
