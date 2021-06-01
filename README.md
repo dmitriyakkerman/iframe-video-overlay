@@ -73,22 +73,21 @@ _Vimeo video ID_
 4.Specify "iconSrc", "width", "height" and "percentage" options inside "playButton" option for play button customization.  
 *_You can pass "width" and "height" options in case using "percentage" option(or even pass "percentage" option, by default "width" and "height" equal "10%" of root element)_
  
-```js 
- 
-      document.addEventListener('DOMContentLoaded', function() {
-          new IFrameVideoOverlay({
-              el: '.video',
-              type: 'youtube', //or 'vimeo'
-              imageSrc: 'video-image.jpg',
-              playButton: {
-                  iconSrc: 'play-button.png',
-                  width: '15%',
-                  height: '15%',
-                  //or
-                  percentage: 20
-              }
-          })
-      });
+```js  
+document.addEventListener('DOMContentLoaded', function() {
+  new IFrameVideoOverlay({
+      el: '.video',
+      type: 'youtube', //or 'vimeo'
+      imageSrc: 'video-image.jpg',
+      playButton: {
+          iconSrc: 'play-button.png',
+          width: '15%',
+          height: '15%',
+          //or
+          percentage: 20
+      }
+  })
+});
 ```
 
 ------
