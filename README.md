@@ -1,3 +1,5 @@
+[![Build Status](https://travis-ci.org/dmitriyakkerman/iframe-video-overlay.svg?branch=master)](https://travis-ci.org/dmitriyakkerman/iframe-video-overlay)
+
 Simple embed responsive video(YouTube, Vimeo) overlay module. 
 
 <img src="https://raw.githubusercontent.com/dmitriyakkerman/iframe-video-overlay/master/docs-images/presentation.gif">
