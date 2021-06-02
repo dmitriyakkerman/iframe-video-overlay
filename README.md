@@ -17,15 +17,15 @@ https://codepen.io/mickyholbrook/pen/yLYvNEr
     npm i iframe-video-overlay
     
 Load the required JS to your entry JS file:
-    
-    let IFrameVideoOverlay = require('iframe-video-overlay');   
-    or    
-    import IFrameVideoOverlay from 'iframe-video-overlay';
-    
+```js    
+let IFrameVideoOverlay = require('iframe-video-overlay');   
+or    
+import IFrameVideoOverlay from 'iframe-video-overlay';
+```    
 Load the required stylesheet to your entry CSS file:
-
-    @import "node_modules/iframe-video-overlay/index";
-    
+```css
+@import "node_modules/iframe-video-overlay/index";
+```    
 **Cloning git repository**
 
     1. Go to your project directory
