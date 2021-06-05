@@ -77,7 +77,7 @@ _Coub video ID_
 
 1.Specify root element (string or DOM node) in "el" option. 
  
-2.Specify video hosting name("youtube" or "vimeo") in "type" option.   
+2.Specify video hosting name("youtube" or "vimeo" or "dailymotion" or "coub") in "type" option.   
 *_You can pass this option in case using youtube video(option "type" has "youtube" value by default)._
 
 3.Specify "imageSrc" if you want to overlay iframe with image.
