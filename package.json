@@ -6,7 +6,7 @@
   "scripts": {
     "build": "webpack -p",
     "start": "webpack --watch",
-    "test": "jest --watch"
+    "test": "jest"
   },
   "devDependencies": {
     "gulp": "^4.0.2",
