@@ -46,6 +46,10 @@ Load the required stylesheet to your entry CSS file:
      
 Create root element, specify video ID inside "data-id" attribute. 
 
+```html          
+<div class="video" data-id="lM02vNMRRB0"></div>
+``` 
+
 _Youtube video ID_
 
 <img src="https://raw.githubusercontent.com/dmitriyakkerman/iframe-video-overlay/master/docs-images/image3.png">
@@ -67,9 +71,6 @@ _Coub video ID_
 
 <img src="https://raw.githubusercontent.com/dmitriyakkerman/iframe-video-overlay/master/docs-images/image6.png">
 
-```html          
-<div class="video" data-id="lM02vNMRRB0"></div>
-``` 
 ------
          
 **Initialization**
