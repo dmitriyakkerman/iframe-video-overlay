@@ -1,6 +1,6 @@
 [![Build Status](https://travis-ci.org/dmitriyakkerman/iframe-video-overlay.svg?branch=master)](https://travis-ci.org/dmitriyakkerman/iframe-video-overlay)
 
-Simple embed responsive video(YouTube, Vimeo) overlay module. 
+Simple embed responsive video(YouTube, Vimeo, Daily Motion, Coub) overlay module. 
 
 <img src="https://raw.githubusercontent.com/dmitriyakkerman/iframe-video-overlay/master/docs-images/presentation.gif">
 
@@ -56,6 +56,17 @@ _Vimeo video ID_
 
 <img src="https://raw.githubusercontent.com/dmitriyakkerman/iframe-video-overlay/master/docs-images/image4.png">
 
+
+_Daily Motion video ID_
+
+
+<img src="https://raw.githubusercontent.com/dmitriyakkerman/iframe-video-overlay/master/docs-images/image5.png">
+
+_Coub video ID_
+
+
+<img src="https://raw.githubusercontent.com/dmitriyakkerman/iframe-video-overlay/master/docs-images/image6.png">
+
 ```html          
 <div class="video" data-id="lM02vNMRRB0"></div>
 ``` 
@@ -77,7 +88,7 @@ _Vimeo video ID_
 document.addEventListener('DOMContentLoaded', function() {
   new IFrameVideoOverlay({
       el: '.video',
-      type: 'youtube', //or 'vimeo'
+      type: 'youtube', //or 'vimeo' or 'dailymotion' or 'coub'
       imageSrc: 'video-image.jpg',
       playButton: {
           iconSrc: 'play-button.png',

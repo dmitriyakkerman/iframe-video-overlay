@@ -1,7 +1,7 @@
 {
   "name": "iframe-video-overlay",
   "version": "1.0.1",
-  "description": "Simple embed responsive video(YouTube, Vimeo) overlay module.",
+  "description": "Simple embed responsive video(YouTube, Vimeo, Daily Motion, Coub) overlay module.",
   "main": "index.js",
   "scripts": {
     "build": "webpack -p",

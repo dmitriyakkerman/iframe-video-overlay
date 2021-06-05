@@ -38,7 +38,9 @@ class IFrameVideoOverlay {
     let defaults = {
       types: {
         youtube: 'https://www.youtube.com/embed/',
-        vimeo: 'https://player.vimeo.com/video/'
+        vimeo: 'https://player.vimeo.com/video/',
+        dailymotion: 'https://www.dailymotion.com/embed/video/',
+        coub: 'https://www.coub.com/embed/'
       }
     };
 
@@ -65,7 +67,6 @@ class IFrameVideoOverlay {
     iframe.src = this.type + videoID;
     iframe.setAttribute("frameborder", "0");
     iframe.setAttribute("allowfullscreen", "1");
-    iframe.setAttribute("allow", "autoplay; encrypted-media");
 
     let playButton = document.createElement('button');
     playButton.classList.add('iframe-video-overlay__play');
