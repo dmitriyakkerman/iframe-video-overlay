@@ -7,25 +7,20 @@ const IFrameVideoOverlay = require('../src/js/iframe-video-overlay');
 describe('IFrameVideoOverlay class defining', () => {
 
     test('IFrameVideoOverlay defining', () => {
-       expect(IFrameVideoOverlay).toBeDefined();
+        expect(IFrameVideoOverlay).toBeDefined();
     });
 
     document.body.innerHTML = `<div class="video" data-id="lM02vNMRRB0"></div>`;
 
     let iframeVideoOverlay = new IFrameVideoOverlay({
         el: '.video',
-        type: 'Daily Motion',
+        type: 'youtube',
         imageSrc: 'https://images.indianexpress.com/2017/04/nature-tree_759.jpg',
         playButton: {
             iconSrc: 'https://erweb.ru/wp-content/uploads/2017/09/youtube-play.png',
             width: '15%',
             height: '15%',
         }
-    });
-
-    test('IFrameVideoOverlay instance testing', () => {
-        //Checking if "Daily Motion" transforms to true type called "dailymotion" and gets "dailymotion" embed link;
-        expect(iframeVideoOverlay.type).toEqual('https://www.dailymotion.com/embed/video/');
     });
 
     test('IFrameVideoOverlay markup testing', () => {
