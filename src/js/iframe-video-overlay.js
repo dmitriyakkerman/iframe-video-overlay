@@ -26,7 +26,7 @@ class IFrameVideoOverlay {
     this.mergeOptionsAndDefaults();
 
     this.el = typeof options.el === 'string' ? document.querySelectorAll(options.el) : options.el;
-    this.type = options.type ? this.defaults.types[options.type.toLowerCase()] : this.defaults.types.youtube;
+    this.type = options.type ? this.defaults.types[IFrameVideoOverlay.validatedType(options.type)] : this.defaults.types.youtube;
     this.imageSrc = options.imageSrc;
     this.playButton = options.playButton;
     this.speed = 700;
@@ -45,6 +45,10 @@ class IFrameVideoOverlay {
     };
 
     this.defaults = {...defaults};
+  }
+
+  static validatedType(type) {
+    return type.replace(/\s/g, "").toLowerCase();
   }
 
   init() {
