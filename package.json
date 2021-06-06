@@ -1,6 +1,6 @@
 {
   "name": "iframe-video-overlay",
-  "version": "1.0.3",
+  "version": "1.0.4",
   "description": "Simple embed responsive video(YouTube, Vimeo, Daily Motion, Coub) overlay module.",
   "main": "index.js",
   "scripts": {
