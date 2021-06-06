@@ -37,12 +37,14 @@ describe('IFrameVideoOverlay class defining', () => {
         let iframeImage = iframeContainer.firstElementChild;
         expect(iframeImage).toBeInstanceOf(HTMLImageElement);
         expect(iframeImage.getAttribute('src')).not.toBeUndefined();
+        expect(iframeImage.getAttribute('src')).not.toBeFalsy();
         expect(iframeImage.classList.contains('iframe-video-overlay__image')).toBeTruthy();
 
         //IFrame testing
         let iframeItself = iframeContainer.firstElementChild.nextElementSibling;
         expect(iframeItself).toBeInstanceOf(HTMLIFrameElement);
         expect(iframeItself.getAttribute('src')).not.toBeUndefined();
+        expect(iframeImage.getAttribute('src')).not.toBeFalsy();
 
         //Button testing
         let iframeButton = iframeContainer.lastElementChild;
