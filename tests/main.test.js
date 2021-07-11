@@ -3,6 +3,7 @@
  */
 
 const IFrameVideoOverlay = require('../src/js/iframe-video-overlay');
+const IFrameButtonClick = require('./mocks/IFrameButtonClick');
 
 describe('IFrameVideoOverlay class defining', () => {
 
@@ -50,5 +51,11 @@ describe('IFrameVideoOverlay class defining', () => {
         let iframeButton = iframeContainer.lastElementChild;
         expect(iframeButton).toBeInstanceOf(HTMLButtonElement);
         expect(iframeButton.classList.contains('iframe-video-overlay__play')).toBeTruthy();
+
+        let data = IFrameButtonClick();
+        iframeButton.click();
+        expect(data).toEqual({
+            'click.Classes': ["iframe-video-overlay__container", "opened"]
+        });
     });
 });
