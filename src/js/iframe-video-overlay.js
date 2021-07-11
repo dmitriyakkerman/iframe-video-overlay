@@ -70,7 +70,7 @@ class IFrameVideoOverlay {
     let videoID = item.dataset.id;
     iframe.src = this.type + videoID;
     iframe.setAttribute("frameborder", "0");
-    iframe.setAttribute("allowfullscreen", "1");
+    iframe.setAttribute("allow", "autoplay; encrypted-media");
 
     let playButton = document.createElement('button');
     playButton.classList.add('iframe-video-overlay__play');
@@ -97,6 +97,7 @@ class IFrameVideoOverlay {
     let playButton = item.querySelector('.iframe-video-overlay__play');
     playButton.addEventListener('click', function(e) {
       this.parentElement.classList.add('opened');
+      this.previousElementSibling.src += "?autoplay=1";
 
       setTimeout(() => {
         this.parentElement.classList.add('hidden');
