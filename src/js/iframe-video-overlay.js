@@ -96,8 +96,8 @@ class IFrameVideoOverlay {
 
     let playButton = item.querySelector('.iframe-video-overlay__play');
     playButton.addEventListener('click', function(e) {
-      this.parentElement.classList.add('opened');
       this.previousElementSibling.src += "?autoplay=1";
+      this.parentElement.classList.add('opened');
 
       setTimeout(() => {
         this.parentElement.classList.add('hidden');
