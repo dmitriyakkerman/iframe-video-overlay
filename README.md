@@ -1,4 +1,4 @@
-![example workflow](https://github.com/dmitriyakkerman/iframe-video-overlay/workflows/test/badge.svg)
+![Testing](https://github.com/dmitriyakkerman/iframe-video-overlay/workflows/test/badge.svg)
 
 Simple embed responsive video(YouTube, Vimeo, Daily Motion, Coub) overlay module. 
 
