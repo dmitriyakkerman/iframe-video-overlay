@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/dmitriyakkerman/iframe-video-overlay.svg?branch=master)](https://travis-ci.org/dmitriyakkerman/iframe-video-overlay)
+![example workflow](https://github.com/dmitriyakkerman/iframe-video-overlay/workflows/test/badge.svg)
 
 Simple embed responsive video(YouTube, Vimeo, Daily Motion, Coub) overlay module. 
 
