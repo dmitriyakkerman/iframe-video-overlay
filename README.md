@@ -1,6 +1,6 @@
 ![Testing](https://github.com/dmitriyakkerman/iframe-video-overlay/workflows/test/badge.svg)
 
-Simple embed responsive video(YouTube, Vimeo, Daily Motion, Coub) overlay module. 
+Embedded responsive video overlay module (YouTube, Vimeo, Daily Motion, Coub).
 
 <img src="https://raw.githubusercontent.com/dmitriyakkerman/iframe-video-overlay/master/docs-images/presentation.gif">
 
