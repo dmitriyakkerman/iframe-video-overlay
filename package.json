@@ -19,7 +19,7 @@
     "webpack-cli": "^3.1.2"
   },
   "dependencies": {
-    "node-sass": "^4.13.1"
+    "node-sass": "^7.0.0"
   },
   "repository": {
     "type": "git",
